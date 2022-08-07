@@ -1,0 +1,107 @@
+:root {
+  --light: #f3f3f3;
+  --dark: rgb(48, 51, 51);
+  --accent: #c72032;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+nav {
+  background-color: var(--dark);
+}
+
+.navigation {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.navigation .logo {
+  background-color: var(--accent);
+  height: 100px;
+  width: 100px;
+}
+.navigation .menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  height: 100%;
+}
+.navigation .menu ul li {
+  height: 100%;
+}
+
+.navigation > .menu ul li a {
+  padding: 0 0.5rem;
+  display: block;
+  height: 100%;
+}
+.navigation .menu a:hover {
+  background-color: var(--accent);
+  background-position: center;
+}
+
+.navigation .call-us {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-content {
+  /* padding: 2em;
+  padding-top: 0; */
+}
+.main-content:last-child {
+  padding-bottom: 2rem;
+}
+#hero {
+  /* margin: 0 -2em; */
+  height: 75vh;
+  background-image: url(./images/dallas2.jpg);
+  background-size: cover;
+}
+
+.hero--caption {
+  display: flex;
+  width: 33%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.section {
+  margin: 2em;
+}
+
+.main-content {
+  background-color: var(--light);
+}
+
+footer {
+  padding: 2rem 0;
+  color: var(--light);
+  background-color: var(--accent);
+}
