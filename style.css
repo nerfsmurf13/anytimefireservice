@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+nav {
+  background-color: rgb(48, 51, 51);
+}
+
+.navigation {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.navigation .logo {
+  background-color: #c72032;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+}
+.navigation .menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  height: 100%;
+}
+.navigation .menu ul li {
+  height: 100%;
+}
+.navigation .menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  height: 100%;
+}
+.navigation .menu ul li a:hover {
+  background-color: #c72032;
+  background-position: center;
+}
+.navigation .mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.navigation .mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+}
+.navigation .mobile-menu ul li a {
+  padding: 1rem;
+  text-align: center;
+  display: block;
+}
+.navigation .mobile-menu ul li a:hover {
+  background-color: #c72032;
+}
+.navigation .call-us {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+.navigation .mobile-button {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 750px) {
+  .navigation .menu {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .navigation .mobile-button {
+    display: none;
+  }
+}
+
+.main-content {
+  /* padding: 2em;
+  padding-top: 0; */
+}
+
+.main-content:last-child {
+  padding-bottom: 2rem;
+}
+
+#hero {
+  /* margin: 0 -2em; */
+  height: 75vh;
+  background-image: url(./images/dallas2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero--caption {
+  display: flex;
+  width: 33%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 750px) {
+  .hero--caption {
+    width: 100%;
+  }
+}
+
+.section {
+  margin: 0 2em;
+  padding: 1em 0;
+}
+
+.main-content {
+  background-color: #f3f3f3;
+}
+
+footer {
+  padding: 2rem 0;
+  color: #f3f3f3;
+  background-color: #c72032;
+}/*# sourceMappingURL=style.css.map */
